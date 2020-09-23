@@ -1,14 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  background: #fafafa;
 }
 
 img {
   max-width: 100%;
 }
 
-/* 
-font-family: 'PT Serif', serif; */
+/*  ==================
+    Typography
+=====================  */
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.position {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+/* ==================
+    general layout
+===================== */
+
+.container {
+  padding: 1.5em 1em;
+  background: #fafafa;
+}
+
+.hero-title {
+  margin-bottom: 1em;
+}
+
+.gallery {
+  margin-top: 3.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+}
+
+.col-1 {
+}
+
+.col-2 {
+  margin-top: 3.2em;
+}
+
+.person {
+  position: relative;
+  width: 160px;
+  margin-bottom: 4em;
+}
+
+.image {
+  width: 85%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  padding-top: 0.7em;
+}
+
+.position {
+  position: absolute;
+  width: 60%;
+  margin: 0;
+  right: -22%;
+  top: 17%;
+  transform: rotate(90deg);
+}
