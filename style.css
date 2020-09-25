@@ -25,7 +25,7 @@ h1 {
 }
 
 .subtitle {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -35,8 +35,8 @@ h1 {
 }
 
 .name {
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .position {
@@ -44,6 +44,13 @@ h1 {
   font-weight: 400;
   font-size: 0.65rem;
   text-transform: uppercase;
+}
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #a9a9a9;
 }
 
 /* ==================
@@ -66,17 +73,17 @@ h1 {
   grid-column-gap: 2em;
 }
 
-.col-1 {
-}
-
-.col-2 {
-  margin-top: 3.2em;
-}
-
 .person {
   position: relative;
   width: 160px;
-  margin-bottom: 4em;
+}
+
+.person-right-mobile {
+  margin-top: 3.5em;
+}
+
+.gallery > .person:nth-child(2) {
+  margin-top: 3.5em;
 }
 
 .image {
@@ -97,4 +104,55 @@ h1 {
   right: -22%;
   top: 17%;
   transform: rotate(90deg);
+}
+
+.footer {
+  margin-top: 6em;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .subtitle,
+  .text {
+    font-size: 1.125rem;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+
+  .container {
+    border: 2px solid red;
+    max-width: 1200px;
+    margin: 2em auto;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-title {
+    padding: 0.7em 0;
+  }
+
+  .hero-sub {
+    width: 45%;
+    padding: 0 3em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+  }
 }
